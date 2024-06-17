@@ -19,7 +19,7 @@
 }
 
 .hero-left p {
-  font-size: 100px;
+  font-size: 80px;
   color: #626262;
   font-weight: 700;
 }
@@ -53,5 +53,5 @@
   align-items: center;
 }
 .hero-right img {
-  margin-top: -20px;
+  width: 68%;
 }
