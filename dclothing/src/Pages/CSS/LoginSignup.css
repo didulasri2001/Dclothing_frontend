@@ -1,0 +1,58 @@
+.signup-container {
+  background-color: white;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: blueviolet;
+  justify-content: center;
+  align-items: center;
+}
+.inputfield {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Input {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login {
+  margin: 1rem 1rem;
+  padding: 0.75rem 2.5rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+}
+.Input img {
+  margin: 0px 10px;
+  width: 15px;
+  height: auto;
+}
+
+.Input input {
+  width: 250px;
+  border: none;
+  outline: none;
+}
+
+.gray {
+  color: gray;
+  background: white;
+  border: 1px solid gray;
+}
+
+.Notext {
+  display: none;
+}
+.text p {
+  text-decoration: none;
+}
