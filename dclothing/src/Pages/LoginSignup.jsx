@@ -16,55 +16,43 @@ function LoginSignup() {
   }
   return (
     <div className="container">
-      {/* <div className="login-container">
-        <div className="header">
-          <h1>{action}</h1>
-        </div>
-        <div className="inputfield">
-          <div className="Input">
-            <img src={email_icon} alt="email" />
-            <input type="text" placeholder="Email id" />
-          </div>
-
-          <div className="Input">
-            <img src={password_icon} alt="email" />
-            <input type="text" placeholder="Password" />
-          </div>
-        </div>
-      </div> */}
       <div className="signup-container">
         <div className="header">
           <h1>{action}</h1>
         </div>
         <div className="inputfield">
           <div className={action === "Sign Up" ? "Input" : "Notext"}>
-            <img src={user_icon} alt="username" />
             <input type="text" placeholder="Name" />
           </div>
           <div className="Input">
-            <img src={email_icon} alt="email" />
-            <input type="text" placeholder="Email id" />
+            <input type="email" placeholder="Email" />
           </div>
 
           <div className="Input">
-            <img src={password_icon} alt="email" />
-            <input type="text" placeholder="Password" />
+            <input type="password" placeholder="Password" />
           </div>
+          <button>Continue</button>
+        </div>
+        <p className="loginsignup-login">
+          Already have an account ? <span>Login here</span>
+        </p>
+        <div className="loginsignup-agree">
+          <input type="checkbox" />
+          <p>
+            I agree to the <span>Terms and Conditions.</span>
+          </p>
+        </div>
+        <div className="buttons" onClick={handleLogin}>
+          <button className={action === "Login" ? "login gray " : "login"}>
+            Signup
+          </button>
+          <button className={action === "Sign Up" ? "login gray " : "login"}>
+            Login
+          </button>
         </div>
       </div>
       <div className={action === "Sign Up" ? "Notext" : "text"}>
-        <p>
-          Lost password?<a href="#"> Click here !</a>
-        </p>
-      </div>
-
-      <div className="buttons" onClick={handleLogin}>
-        <button className={action === "Login" ? "login gray " : "login"}>
-          Signup
-        </button>
-        <button className={action === "Sign Up" ? "login gray " : "login"}>
-          Login
-        </button>
+        <p>Lost password? Click here !</p>
       </div>
     </div>
   );
